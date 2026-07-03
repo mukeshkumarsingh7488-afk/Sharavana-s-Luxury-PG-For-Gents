@@ -216,3 +216,16 @@ Please share room availability, rent details and visit timing.`;
 export const callLink = `tel:${BUSINESS.phone}`;
 
 export const mapLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS.mapQuery)}`;
+export const gmailLink = (service = "PG room enquiry") => {
+  const subject = `${BUSINESS.name} - Room Enquiry`;
+
+  const body = `Hello ${BUSINESS.name},
+
+I would like to know more about ${service}.
+
+Please share room availability, rent details and visit timing.
+
+Thank you.`;
+
+  return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(BUSINESS.email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+};
