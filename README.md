@@ -1,8 +1,8 @@
-# 🏠 Sri Jyothsna Luxury Gents PG Website
+# 🏠 Sharavana's Luxury PG For Gents Website
 
 A modern, premium, fully responsive PG (Paying Guest) website built using **React + Vite**.
 
-Designed for **Sri Jyothsna Luxury Gents PG, Whitefield, Bengaluru**, with a reusable architecture where changing a single configuration file updates the entire website.
+Designed for **Sharavana's Luxury PG For Gents, Whitefield, Bengaluru**, with a reusable architecture where changing a single configuration file updates the entire website.
 
 ---
 
@@ -14,6 +14,9 @@ Designed for **Sri Jyothsna Luxury Gents PG, Whitefield, Bengaluru**, with a reu
 - WhatsApp Enquiry
 - Direct Calling
 - Google Maps Integration
+- Live Google Rating
+- Live Google Review Count
+- Google Reviews Section
 - SEO Optimized
 - Fast Loading
 - Reusable Architecture
@@ -21,7 +24,6 @@ Designed for **Sri Jyothsna Luxury Gents PG, Whitefield, Bengaluru**, with a reu
 - Premium Glassmorphism Design
 - Room Pricing Cards
 - Facilities Section
-- Google Reviews Section
 - Floating WhatsApp Button
 - Floating Call Button
 - Production Ready
@@ -36,13 +38,14 @@ Designed for **Sri Jyothsna Luxury Gents PG, Whitefield, Bengaluru**, with a reu
 - CSS
 - React Icons
 - Lucide React
+- Google Places API
 
 ---
 
 # 📁 Folder Structure
 
 ```text
-SRI JYOTHSNA LUXURY GENTS PG
+SHARAVANA'S LUXURY PG FOR GENTS
 │
 ├── public
 │   ├── favicon.ico
@@ -51,14 +54,15 @@ SRI JYOTHSNA LUXURY GENTS PG
 │   ├── apple-touch-icon.png
 │   ├── android-chrome-192x192.png
 │   ├── android-chrome-512x512.png
-│   ├── site.webmanifest
-│   ├── favicon.svg
-│   └── icons.svg
+│   ├── og-image.jpg
+│   └── site.webmanifest
 │
 ├── src
 │   │
+│   ├── api
+│   │   └── googlePlaces.js
+│   │
 │   ├── assets
-│   │   ├── hero.png
 │   │   └── logo
 │   │       └── logo.jpg
 │   │
@@ -70,13 +74,16 @@ SRI JYOTHSNA LUXURY GENTS PG
 │   │   ├── Facilities.jsx
 │   │   ├── Pricing.jsx
 │   │   ├── Gallery.jsx
-│   │   ├── Testimonials.jsx
+│   │   ├── GoogleReviews.jsx
 │   │   ├── Contact.jsx
 │   │   ├── Footer.jsx
 │   │   └── FloatingButtons.jsx
 │   │
 │   ├── config
 │   │   └── business.js
+│   │
+│   ├── hooks
+│   │   └── useGooglePlace.js
 │   │
 │   ├── pages
 │   │   └── Home.jsx
@@ -87,11 +94,11 @@ SRI JYOTHSNA LUXURY GENTS PG
 │   │
 │   └── vite.config.js
 │
-├── public
+├── .env
+├── .gitignore
 ├── index.html
 ├── package.json
 ├── package-lock.json
-├── .gitignore
 ├── README.md
 └── vite.config.js
 ```
@@ -123,7 +130,8 @@ Simply update this file for a new PG client and the entire website updates autom
 - Google Maps Location
 - Opening Hours
 - Google Rating
-- Reviews
+- Google Review Count
+- Google Place ID
 - Theme Colors
 - Hero Section
 - About Section
@@ -131,7 +139,7 @@ Simply update this file for a new PG client and the entire website updates autom
 - Facilities
 - Pricing Plans
 - Gallery
-- Testimonials
+- Google Reviews
 - Contact Information
 - Footer
 - Social Media Links
@@ -148,7 +156,7 @@ Simply update this file for a new PG client and the entire website updates autom
 - Facilities
 - Pricing
 - Gallery
-- Testimonials
+- Google Reviews
 - Contact
 - Footer
 - Floating WhatsApp Button
@@ -158,7 +166,7 @@ Simply update this file for a new PG client and the entire website updates autom
 
 # 🛏 Room Types
 
-Sri Jyothsna Luxury Gents PG offers multiple room options for different budgets.
+Sharavana's Luxury PG For Gents offers multiple room options suitable for students and working professionals.
 
 - 1 Sharing Room
 - 2 Sharing Room
@@ -186,11 +194,30 @@ Residents enjoy premium facilities including:
 
 ---
 
+# ⭐ Google Reviews Integration
+
+This project includes live Google Business integration.
+
+Features:
+
+- Live Google Rating
+- Live Google Review Count
+- Google Place ID Integration
+- View All Reviews Button
+- Direct Google Maps Redirect
+- Manual Featured Review Cards
+- Fallback Support
+
+---
+
 # 📞 Contact Features
 
 - Direct Calling
 - WhatsApp Enquiry
 - Google Maps Navigation
+- Clickable Address
+- Clickable Phone Number
+- Clickable Email
 - Room Availability Enquiry
 - Quick Contact Form
 
@@ -198,7 +225,7 @@ Residents enjoy premium facilities including:
 
 # 🌐 SEO Ready
 
-Includes
+Includes:
 
 - Meta Title
 - Meta Description
@@ -224,13 +251,19 @@ git clone <repository-url>
 Go to Project Folder
 
 ```bash
-cd sri-jyothsna-luxury-gents-pg
+cd Sharavana-s-Luxury-PG-For-Gents
 ```
 
 Install Dependencies
 
 ```bash
 npm install
+```
+
+Create Environment File
+
+```env
+VITE_GOOGLE_API_KEY=YOUR_GOOGLE_PLACES_API_KEY
 ```
 
 Start Development Server
@@ -261,7 +294,7 @@ npm run preview
 
 **Business Name**
 
-Sri Jyothsna Luxury Gents PG
+Sharavana's Luxury PG For Gents
 
 **Category**
 
@@ -273,11 +306,11 @@ Whitefield, Bengaluru
 
 **Google Rating**
 
-4.4★
+4.1★
 
 **Google Reviews**
 
-509+
+310+
 
 **Opening Hours**
 
@@ -300,19 +333,19 @@ Whitefield, Bengaluru
 
 Primary Color
 
-Premium Green
+Royal Blue
 
 Secondary Color
 
-Luxury Gold
+Sky Blue
 
 Background
 
-Dark Green
+Dark Premium Blue
 
 Style
 
-Luxury Premium PG
+Modern Premium PG
 
 ---
 
@@ -336,6 +369,7 @@ No component modifications are required.
 - Optimized Images
 - Reusable Components
 - Dynamic Business Configuration
+- Live Google Business Integration
 - Fast Rendering
 - Modern UI
 - Production Ready
@@ -346,15 +380,20 @@ No component modifications are required.
 
 ## BR30 Web Services
 
-Professional Business Websites
+Professional Business Website Development
+
+Services:
 
 - Business Landing Pages
 - Gym Websites
 - Spa Websites
+- Salon Websites
 - PG Websites
+- Hotel Websites
 - Restaurant Websites
 - Portfolio Websites
 - SEO Optimization
+- Google Business Integration
 - Custom Web Applications
 
 ---
