@@ -1,6 +1,10 @@
 node_modules/
 dist/
 .vscode/
+
 .env
 .env.*
+
 *.log
+
+place-id.js
