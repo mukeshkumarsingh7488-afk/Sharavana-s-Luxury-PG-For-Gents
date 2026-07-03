@@ -142,9 +142,22 @@ export const BUSINESS = {
     title: "Trusted by PG residents in Whitefield.",
     subtitle: "Rated 4.1 stars from 310 Google reviews.",
     reviews: [
-      { name: "Resident", text: "Good PG location, food facilities and comfortable stay for working professionals." },
-      { name: "Working Professional", text: "Nice place to stay near Whitefield with useful daily facilities and easy access." },
-      { name: "Local Resident", text: "Affordable rooms, food and basic amenities make it a practical PG option." },
+      {
+        name: "Resident",
+        text: "Good PG location, food facilities and comfortable stay for working professionals.",
+      },
+      {
+        name: "Working Professional",
+        text: "Nice place to stay near Whitefield with useful daily facilities and easy access.",
+      },
+      {
+        name: "Local Resident",
+        text: "Affordable rooms, food and basic amenities make it a practical PG option.",
+      },
+      {
+        name: "IT Professional",
+        text: "Clean rooms, quality food, friendly management and a convenient location near ITPL make this PG a great choice.",
+      },
     ],
   },
 
@@ -177,6 +190,10 @@ export const BUSINESS = {
     facebook: "https://www.facebook.com/",
     youtube: "https://www.youtube.com/",
     twitter: "https://x.com/",
+  },
+
+  google: {
+    placeId: "ChIJ_UFwOk0RrjsRmrA6O4Iftek",
   },
 
   seo: {
