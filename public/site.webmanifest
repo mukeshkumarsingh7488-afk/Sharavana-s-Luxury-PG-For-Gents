@@ -1,0 +1,24 @@
+{
+  "name": "Sharavana's Luxury PG For Gents",
+  "short_name": "Sharavana PG",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#06130f",
+  "background_color": "#06130f",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "orientation": "portrait",
+  "lang": "en",
+  "description": "Sharavana's Luxury PG For Gents - Premium PG accommodation near ITPL Back, Whitefield, Bengaluru with 1, 2, 3 & 4 sharing rooms, 3-time food, free WiFi, fridge, washing machine, TV, CCTV and 24/7 stay."
+}
